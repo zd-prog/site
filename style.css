@@ -1,0 +1,496 @@
+*,
+*:before,
+*:after
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	margin: 0;
+	font-family: 'Noto Serif', serif;
+	font-size: 14px;
+	color: #fff;
+}
+
+
+.container
+{
+	width: 100%;
+	max-width: 1700px;
+	margin: 0 auto;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+/* preloader */
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1001;
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+/* Header */
+
+.header
+{
+	background-color: #503430; 
+	opacity: 100%;
+	display: flex;
+}
+
+.header .menu div
+{
+	display: flex;
+}
+
+.header__inner
+{
+	padding: 25px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+header
+{
+	display: flex;
+}
+
+.logo
+{
+	padding-left: 5%; 
+	display: flex;
+
+}
+.logo_text
+{	font-weight: 800;
+	padding-top: 5px; 	
+	font-family: 'Zilla Slab', serif;
+	font-size: 24px;
+}
+.menu
+{
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.nav_link
+{
+	color: #fff;
+	padding: 0 100px;
+	text-decoration: none;
+	text-align: center;
+	opacity: 0.85;
+	transition: opacity 0.1s linear;
+}
+
+.nav_link:hover
+{
+	opacity: 1;
+	background-color: #fff;
+	margin-top: -35px;
+	margin-bottom: -35px;
+	color: #503430;
+	text-align: center;
+	padding-top: 35px;
+	text-decoration: none;
+}
+
+.call
+{
+	padding-right: 5%;
+}
+
+.telephone
+{
+	font-size: 24px;
+}
+
+.call_text
+{
+	text-decoration: none;
+	font-size: 13px;
+	color: #fff;
+
+}
+
+.call_text:hover
+{
+	text-decoration: underline;
+}
+
+
+
+/* intro */
+.intro
+{
+	background: url(images/background.jpg) no-repeat;
+	filter: opacity(80%);
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-align: center;
+	background-position: center; 
+}
+
+.intro__inner
+{
+	width: 50%;
+	align-content: center;
+	margin: 0 auto;
+	background-color: #fff; 
+	margin-bottom: 5%;
+}
+.main_text
+{
+	font-family: 'Zilla Slab', serif;
+	font-weight: bold; 
+	font-size: 40px;
+	width: 100%;
+	margin-bottom: 0.3%;
+	line-height: 1.1;
+	color: #503430;
+	padding-top: 2%;
+}
+
+.sub_text
+{
+	font-family: 'Lora', serif;
+	line-height: 1.1;
+	margin-bottom: 3%;
+	color: #503430;
+	font-weight: lighter;
+}
+
+.intro_button
+{
+	margin-bottom: 3%;
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'Lora', serif;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+	padding: 9px 20px;
+	border-radius: 100px;
+}
+
+.intro_button--color
+{
+	background-color: #503430; 
+}
+
+.intro_button:hover
+{
+	text-decoration: none;
+}
+/* request */
+.request
+{
+	height: 722px;
+	background-color: #503430; 
+	opacity: 80%;
+}
+
+.request__inner
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+	margin-right: 30px;
+}
+
+.request_text
+{
+	font-size: 32px;
+	text-align: center;
+	padding-top: 2.5%;
+	color: #F0F0C0;
+}
+
+.request_form
+{
+	padding-left: 15%;
+	padding-top: 5%;
+	text-align: right;
+}
+
+.request_image
+{
+	width: 35%;
+	height: 35%;
+	margin-right: 10%;
+	margin-left: 5%;
+}
+
+.text_form
+{
+	font-size: 20px;
+	font-family: 'Lora', serif;
+	color: #F0F0C0;
+	text-align: left;
+}
+
+input,
+textarea
+{
+	width: 400px;
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.button
+{
+	margin-top: 5%;
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'Lora', serif;
+	font-size: 20px;
+	color: #503430;
+	background-color: #F0F0C0;
+	font-weight: bold;
+	padding: 9px 20px;
+	border-radius: 100px;
+	width: 200px;
+
+}
+
+
+
+
+/* footer */
+
+.footer
+{
+	padding: 15px;
+	padding-left: 80px;
+	background-color: #F0F0C0;
+}
+
+.footer__inner
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_block
+{
+	width: 50%;
+	text-align: center;
+}
+
+.footer_title
+{
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Zilla Slab', serif;
+	color: #503430;
+}
+
+.footer_address,
+.footer_telephone,
+.footer_email,
+.footer_time
+{
+	font-family: 'Oxygen', sans-serif;
+	font-size: 11px;
+	color: #503430;
+	font-style: normal;
+}
+
+.social
+{
+	display: flex;
+	justify-content: center;
+}
+
+.social_item
+{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 8px;
+	margin-left: 8px;
+	text-align: right;
+	margin-top: 7px; 
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px)
+{
+
+	.preloader
+	{
+		display: none;
+	}
+	/* Header */
+
+	.header
+	{
+		flex-direction: column;
+	}
+	.nav_link
+	{
+		padding-right: 25px;
+	}
+	.header .menu div
+	{
+		flex-direction: column;
+		align-self: center;
+	}
+	.header .menu div a
+	{
+		margin: 1px;
+	}
+	.header .menu div a:hover
+	{
+		opacity: 1;
+		background-color: #fff;
+		margin-top: -1px;
+		margin-bottom: -1px;
+		color: #503430;
+		text-align: center;
+		padding-top: 1px;
+		padding-bottom: 1px;
+
+	}
+	.header__inner
+	{
+		padding-right: 5px;
+		padding-left: 15px;
+	}
+	.call
+	{
+		display: none;
+	}
+	/* request */
+
+	.request_image
+	{
+		display: none;
+	}
+	input,
+	textarea
+	{
+		width: 190px;
+	}
+	.request_form
+	{
+		margin-left: 13%;
+		margin-right: 11%;
+		text-align: center;
+	}
+	.button
+	{
+		margin-top: 15%;
+	}
+	/* intro */
+	.main_text
+	{
+		font-size: 25px;
+	}
+	.intro__inner
+	{
+		width: 75%;
+	}
+	/* footer */
+
+	.footer
+	{
+		padding: 15px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1100px)
+{
+
+	.preloader
+	{
+		display: none;
+	}
+
+	/* Header */
+
+	.header
+	{
+		flex-direction: column;
+	}
+	.header .menu div
+	{
+		flex-direction: column;
+		align-self: center;
+	}
+	.header .menu div a
+	{
+		margin: 1px;
+	}
+	.header .menu div a:hover
+	{
+		opacity: 1;
+		background-color: #fff;
+		margin-top: -1px;
+		margin-bottom: -1px;
+		color: #503430;
+		text-align: center;
+		padding-top: 1px;
+		padding-bottom: 1px;
+}
+	.nav_link
+	{
+		padding: 0 100px;
+	}
+	.call
+	{
+		display: block;
+	}
+	/* request */
+
+	.request_form
+	{
+		margin-left: 5%;
+		margin-right: 9%;
+		text-align: center;
+	}
+	.request_image
+	{
+		display: block;
+	}
+	.button
+	{
+		margin-top: 15%;
+	}
+	input,
+	textarea
+	{
+		width: 210px;
+	}
+}
