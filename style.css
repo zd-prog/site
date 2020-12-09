@@ -345,8 +345,7 @@ textarea
 	text-align: right;
 	margin-top: 7px; 
 }
-
-@media screen and (min-width: 375px) and (max-width: 767px)
+@media screen and (min-width: 60px) and (max-width: 767px)
 {
 
 	.preloader
@@ -361,6 +360,7 @@ textarea
 	}
 	.nav_link
 	{
+		padding-left: 10px;
 		padding-right: 25px;
 	}
 	.header .menu div
@@ -394,7 +394,10 @@ textarea
 		display: none;
 	}
 	/* request */
-
+	.request_text
+	{
+		font-size: 20px;
+	}
 	.request_image
 	{
 		display: none;
@@ -406,7 +409,7 @@ textarea
 	}
 	.request_form
 	{
-		margin-left: 13%;
+		margin-left: 7%;
 		margin-right: 11%;
 		text-align: center;
 	}

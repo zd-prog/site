@@ -250,7 +250,7 @@ header
 	font-weight: bold; 
 	font-size: 40px;
 	width: 100%;
-	margin-bottom: 4%;
+	margin-bottom: 3%;
 	line-height: 1.1;
 	color: #fff;
 	padding-top: 5%;
@@ -265,7 +265,7 @@ header
     word-spacing: 3px;
     width: 70%;
     margin-left: 15%;
-    margin-top: 10%;
+    margin-top: 7%;
     text-align: left;
 }
 
@@ -336,8 +336,9 @@ header
 }
 
 
-.confirm{
- float: none !important;
+.confirm
+{
+ float: none !important;     /*надпись растягивается справа от чекбокса*/
 }
 
 .review_form input[type="checkbox"]{
@@ -360,7 +361,7 @@ header
 
 .partners
 {
-	height: 725px;
+	height: 525px;
 	background-color: #fff;
 	opacity: 80%;
 }
@@ -387,7 +388,7 @@ header
 
 .partner_item
 {
-	margin-top: 150px;
+	margin-top: 60px;
 	margin-left: 85px;
 }
 /* footer */
@@ -448,8 +449,8 @@ header
 	text-align: right;
 	margin-top: 7px; 
 }
+@media screen and (min-width: 320px) and (max-width: 374px)
 
-@media screen and (min-width: 375px) and (max-width: 767px)
 {
 	/* Header */
 
@@ -459,6 +460,7 @@ header
 	}
 	.nav_link
 	{
+		padding-left: 10px;
 		padding-right: 25px;
 	}
 	.header .menu div
@@ -514,8 +516,8 @@ header
 
 	.features_text
 	{	
-		font-size: 15px;
-		line-height: 1.7;
+		font-size: 13px;
+		line-height: 1.0;
 	}
 
 	/* slider*/
@@ -615,7 +617,7 @@ header
 	
 	.partners
 	{
-		height: 300px;
+		height: 200px;
 	}
 	.partners_text
 	{
@@ -624,13 +626,14 @@ header
 	}
 	.partner_item img
 	{
-		width: 75px;
+		width: 55px;
 	}
 
 	.partner_item
 	{
-		margin-top: 70px;
-		margin-left: 15px;
+		margin-top: 40px;
+		margin-left: 10px;
+		margin-right: 15px;
 	}
 
 	/* footer */
@@ -640,7 +643,394 @@ header
 		padding: 15px;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 1100px)
+@media screen and (min-width: 375px) and (max-width: 419px)
+
+{
+	/* Header */
+
+	.header
+	{
+		flex-direction: column;
+	}
+	.nav_link
+	{
+		padding-left: 10px;
+		padding-right: 25px;
+	}
+	.header .menu div
+	{
+		flex-direction: column;
+		align-self: center;
+	}
+	.header .menu div a
+	{
+		margin: 1px;
+	}
+	.header .menu div a:hover
+	{
+		opacity: 1;
+		background-color: #fff;
+		margin-top: -1px;
+		margin-bottom: -1px;
+		color: #503430;
+		text-align: center;
+		padding-top: 1px;
+		padding-bottom: 1px;
+
+	}
+	.header__inner
+	{
+		padding-right: 5px;
+		padding-left: 15px;
+	}
+	.call
+	{
+		display: none;
+	}
+
+	/* features*/
+
+	.features_main_text
+	{
+		margin-top: 2%;
+		font-size: 25px;
+	}
+	.features_item
+	{
+		width: 33.333%;
+		text-align: center;
+		padding: 30px 15px;
+	}
+
+	.features_icon
+	{
+		width: 75px;
+		height: 75px;
+	}
+
+	.features_text
+	{	
+		font-size: 13px;
+		line-height: 1.0;
+	}
+
+	/* slider*/
+
+	.slider1
+	{
+		height: 350px;
+	}
+	.slider_text
+	{
+		padding-top: 13%;
+		font-size: 25px;
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
+	.slider_image
+	{
+		width: 250px;
+	}
+	.previous, .next
+	{
+	    font-size: 18px;
+	    margin-top: -140px;
+	    width: 20px;
+	}
+
+	.next
+	{
+		right: 70px;
+	}
+
+	.previous
+	{
+		left: 70px;
+	}
+
+	/* reviews */
+
+	.reviews_text
+	{
+		font-size: 25px;
+	}
+
+	.review_item
+	{
+	    font-size: 14px;
+	    line-height: 170%;
+	    word-spacing: 3px;
+	    width: 50%;
+	    margin-left: 25%;
+	    margin-bottom: 50px;
+	}
+
+	.review_author
+	{
+		font-size: 28px;
+		margin-bottom: 35px;
+	}
+	.previous_comm, .next_comm
+	{
+	    font-size: 24px;
+   		margin-top: -20px;
+    	width: 30px;
+	}
+
+.next_comm
+{
+	right: 25px;
+}
+
+.previous_comm
+{
+	left: 25px;
+}
+
+	.review_form label
+	{
+ 		width: 80px;
+ 		float: left;
+	}
+
+	.review_form input
+	{
+ 		width: 200px;
+	}
+ 
+	.review_form textarea
+	{
+ 		width: 200px;
+ 		max-width: 200px;
+ 		min-width: 200px;
+		line-height: 150%;
+	}
+
+
+	/* partners */
+	
+	.partners
+	{
+		height: 200px;
+	}
+	.partners_text
+	{
+		margin-bottom: 0;
+		font-size: 30px;
+	}
+	.partner_item img
+	{
+		width: 65px;
+	}
+
+	.partner_item
+	{
+		margin-top: 40px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	/* footer */
+
+	.footer
+	{
+		padding: 15px;
+	}
+}
+@media screen and (min-width: 425px) and (max-width: 767px)
+{
+	/* Header */
+
+	.header
+	{
+		flex-direction: column;
+	}
+	.nav_link
+	{
+		padding-left: 10px;
+		padding-right: 25px;
+	}
+	.header .menu div
+	{
+		flex-direction: column;
+		align-self: center;
+	}
+	.header .menu div a
+	{
+		margin: 1px;
+	}
+	.header .menu div a:hover
+	{
+		opacity: 1;
+		background-color: #fff;
+		margin-top: -1px;
+		margin-bottom: -1px;
+		color: #503430;
+		text-align: center;
+		padding-top: 1px;
+		padding-bottom: 1px;
+
+	}
+	.header__inner
+	{
+		padding-right: 5px;
+		padding-left: 15px;
+	}
+	.call
+	{
+		display: none;
+	}
+
+	/* features*/
+
+	.features_main_text
+	{
+		margin-top: 2%;
+		font-size: 25px;
+	}
+	.features_item
+	{
+		width: 33.333%;
+		text-align: center;
+		padding: 30px 15px;
+	}
+
+	.features_icon
+	{
+		width: 75px;
+		height: 75px;
+	}
+
+	.features_text
+	{	
+		font-size: 13px;
+		line-height: 1.0;
+	}
+
+	/* slider*/
+
+	.slider1
+	{
+		height: 350px;
+	}
+	.slider_text
+	{
+		padding-top: 13%;
+		font-size: 25px;
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
+	.slider_image
+	{
+		width: 250px;
+	}
+	.previous, .next
+	{
+	    font-size: 18px;
+	    margin-top: -140px;
+	    width: 20px;
+	}
+
+	.next
+	{
+		right: 70px;
+	}
+
+	.previous
+	{
+		left: 70px;
+	}
+
+	/* reviews */
+
+	.reviews_text
+	{
+		font-size: 25px;
+	}
+
+	.review_item
+	{
+	    font-size: 14px;
+	    line-height: 170%;
+	    word-spacing: 3px;
+	    width: 50%;
+	    margin-left: 25%;
+	    margin-bottom: 50px;
+	}
+
+	.review_author
+	{
+		font-size: 28px;
+		margin-bottom: 35px;
+	}
+	.previous_comm, .next_comm
+	{
+	    font-size: 24px;
+   		margin-top: -20px;
+    	width: 30px;
+	}
+
+.next_comm
+{
+	right: 25px;
+}
+
+.previous_comm
+{
+	left: 25px;
+}
+
+	.review_form label
+	{
+ 		width: 80px;
+ 		float: left;
+	}
+
+	.review_form input
+	{
+ 		width: 200px;
+	}
+ 
+	.review_form textarea
+	{
+ 		width: 200px;
+ 		max-width: 200px;
+ 		min-width: 200px;
+		line-height: 150%;
+	}
+
+
+	/* partners */
+	
+	.partners
+	{
+		height: 200px;
+	}
+	.partners_text
+	{
+		margin-bottom: 0;
+		font-size: 30px;
+	}
+	.partner_item img
+	{
+		width: 85px;
+	}
+
+	.partner_item
+	{
+		margin-top: 40px;
+		margin-left: 10px;
+		margin-right: 15px;
+	}
+
+	/* footer */
+
+	.footer
+	{
+		padding: 15px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px)
 {
 	/* Header */
 
@@ -744,6 +1134,10 @@ header
 
 	/* partners */
 
+	.partners
+	{
+		height: 400px;
+	}
 	.partner_item img
 	{
 		width: 150px;
@@ -751,7 +1145,7 @@ header
 
 	.partner_item
 	{
-		margin-top: 230px;
+		margin-top: 60px;
 		margin-left: 35px;
 	}
 
@@ -761,5 +1155,3 @@ header
 	}
 	
 }
-
-

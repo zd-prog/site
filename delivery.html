@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="style_delivery.css">
 		<link rel="shortcut icon" type="image/png" href="images/icon.png">
 		<title>Доставка</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	</head>
 	<body>
 
@@ -66,10 +67,10 @@
 			</div>
 		</header>
 
-
 		<section class="delivery">
 			<div class="container">
 				<h3 class="delivery_text">Процесс заказа и доставки</h3>
+				<h6 class="sub_delivery_text">Наведите мышку на пункт, чтобы увидеть подсказку</h6>
 				<div class="delivery_inner">
 					<div class="circles">
   						<div class="circle">
@@ -92,9 +93,10 @@
 						    <div class="circle__number">6</div>
 						</div>    
 					</div>
+
 					<div class="text">
 						<div class="point">
-							<div>Заявка</div>
+							<div class="new" onclick="AddBlock()">Заявка</div>
 						</div>
 						<div class="point">
 							<div>Уточнение деталей</div>
@@ -117,7 +119,7 @@
 			</div>
 		</section>
 
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container">
 				<div class="footer__inner">
 					<div class="footer_block">
