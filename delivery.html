@@ -1,13 +1,17 @@
- target="_blank"<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif&family=Oxygen&family=Zilla+Slab&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="style_delivery.css">
+		<link rel="stylesheet" href="css/repeat.css">
+		<link rel="stylesheet" href="css/style_delivery.css">
+		
+
 		<link rel="shortcut icon" type="image/png" href="images/icon.png">
 		<title>Доставка</title>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 	</head>
 	<body>
 
@@ -33,7 +37,7 @@
 
 				</g>
 			</svg>
-			<svg viewBox="0 0 1600 612" id="new">
+			<svg viewBox="0 0 1600 612">
   				<use href="#track" x="450">
     				<animate attributeName="x"
     						begin="0s"
@@ -54,14 +58,14 @@
 					</div>
 					<nav class="menu">
 						<div>
-							<a class = "nav_link" href="index.html">Главная</a>					
-							<a class = "nav_link" href="About.html">О компании</a>					
-							<a class = "nav_link" href="">Доставка</a>
+							<a title="main" class = "nav_link" href="index.html">Главная</a>					
+							<a title="About" class = "nav_link" href="About.html">О компании</a>					
+							<a title="delivery" class = "nav_link" href="">Доставка</a>
 						</div>
 					</nav>
 					<div class="call"> 
 						<div class="telephone">+375290000000</div>
-						<a class="call_text" href="tel:+3750000000">Заказать звонок</a>
+						<a title="call" class="call_text" href="tel:+3750000000">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -95,8 +99,8 @@
 					</div>
 
 					<div class="text">
-						<div class="point">
-							<div class="new" onclick="AddBlock()">Заявка</div>
+						<div class="point" id="prompt">
+							<div class="new" onclick="AddBlock()" onclick="notNew()">Заявка</div>
 						</div>
 						<div class="point">
 							<div>Уточнение деталей</div>
@@ -114,7 +118,7 @@
 							<div>Передача груза получателю</div>
 						</div>
 					</div>
-					<img  class="delivery_image" src="images/dostavka.png">
+					<img title="delivery" alt="Курьер" class="delivery_image" src="images/dostavka.png">
 				</div>
 			</div>
 		</section>
@@ -136,14 +140,14 @@
 						<h4 class="footer_title">Часы работы</h4>
 						<div class="footer_time">ПН-ВС: 8:00 - 20:00</div>
 						<div class="social">
-							<a class="social_item" href="https://www.facebook.com/" target="_blank">
-								<img src="images/facebook.svg" width="30px" height="30px">
+							<a title="fb" class="social_item" href="https://www.facebook.com/" target="_blank">
+								<img title="fb_image" alt="Иконка facebook" src="images/facebook.svg" width="30px" height="30px">
 							</a>
-							<a class="social_item" href="https://vk.com" target="_blank">
-								<img src="images/vk.svg" width="30px" height="30px">
+							<a title="vk" class="social_item" href="https://vk.com" target="_blank">
+								<img title="vk_image" alt="Иконка vk" src="images/vk.svg" width="30px" height="30px">
 							</a>
-							<a class="social_item" href="https://instagram.com" target="_blank">
-								<img src="images/instagram.svg" width="30px" height="30px">
+							<a title="ig" class="social_item" href="https://instagram.com" target="_blank">
+								<img title="instagram_image" alt="Иконка instagram" src="images/instagram.svg" width="30px" height="30px">
 							</a>
 						</div>
 					</div>

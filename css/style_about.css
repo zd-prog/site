@@ -1,0 +1,506 @@
+/* features*/
+
+.features
+{
+	height: 750px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #c1bab8;
+}
+
+.features_main_text
+{
+	font-family: 'Zilla Slab', serif;
+	font-weight: bold; 
+	font-size: 40px;
+	width: 100%;
+	margin-bottom: 0.3%;
+	line-height: 1.1;
+	color: #fff;
+	padding-top: 2%;
+	text-align: center;
+}
+.features_item
+{
+	width: 33.333%;
+	text-align: center;
+	padding: 50px 80px;
+	margin: 15px 0;
+}
+
+.features_icon
+{
+	width: 125px;
+	height: 125px;
+	margin-bottom: 20px;
+}
+
+.features_text
+{	
+	color: #fff;
+	font-size: 22px;
+	line-height: 1.5;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* slider */
+
+.slider1
+{
+	height: 725px;
+	background-color: #eedfd6;
+	width: 100%;
+	text-align: center;
+}
+.slider_text
+{
+	font-family: 'Zilla Slab', serif;
+	font-weight: bold; 
+	font-size: 40px;
+	width: 100%;
+	margin-bottom: 6%;
+	line-height: 1.1;
+	color: #503430;
+	padding-top: 3%;
+	text-align: center;
+}
+
+.previous, .next
+{
+	position: absolute;
+	cursor: pointer;
+    color: #503430;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 0 3px 3px 0;
+    margin-top: -290px;
+    width: 30px;
+    background-color: #dabdaa; 
+}
+
+.next
+{
+	right: 450px;
+}
+
+.previous
+{
+	left: 450px;
+}
+.next:hover, .previous:hover
+{
+	color: #dabdaa;
+	background-color: #503430;
+}
+.slider_item
+{
+	margin-bottom: 55px;
+}
+
+/* reviews */
+
+.slider2
+{
+	background-color: #B7CCA9;
+	width: 100%;
+	text-align: center;
+	opacity: 85%;
+	height: 725px;
+}
+
+.reviews_text
+{
+	font-family: 'Zilla Slab', serif;
+	font-weight: bold; 
+	font-size: 40px;
+	width: 100%;
+	margin-bottom: 3%;
+	line-height: 1.1;
+	color: #fff;
+	padding-top: 5%;
+	text-align: center;
+}
+
+.review_item
+{
+    color: white;
+    font-size: 18px;
+    line-height: 170%;
+    word-spacing: 3px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 7%;
+    text-align: left;
+}
+
+.review_author
+{
+	text-align: left;
+	opacity: 50%;
+	font-size: 28px;
+	margin-bottom: 50px;
+}
+
+.review_text
+{
+	font-size: 25px;
+}
+
+.previous_comm, .next_comm
+{
+	position: absolute;
+	cursor: pointer;
+    color: #B7CCA9;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 0 3px 3px 0;
+    margin-top: -110px;
+    width: 30px;
+    background-color: #fff; 
+}
+
+.next_comm
+{
+	right: 150px;
+}
+
+.previous_comm
+{
+	left: 125px;
+}
+.next_comm:hover, .previous_comm:hover
+{
+	color: #fff;
+	background-color: black;
+}
+.review_items
+{
+	height: 200px;
+}
+
+.review_form
+{
+	text-align: center;
+}
+
+.review_form label{
+ width: 180px;
+ float: left;
+}
+
+.review_form input{
+ width: 400px;
+}
+ 
+.review_form textarea{
+ width: 400px;
+ max-width: 400px;
+ min-width: 400px;
+ line-height: 150%;
+}
+
+
+.confirm
+{
+ float: none !important;     /*надпись растягивается справа от чекбокса*/
+}
+
+.review_form input[type="checkbox"]{
+ width: auto;
+}
+
+
+.review_form input, .review_form textarea, .review_form select{
+ padding: 9px;
+ border: 1px solid #E5E5E5;
+ border-radius: 5px;
+}
+
+.review_form p
+{
+	margin-bottom: 20px;
+}
+
+/* partners */
+
+.partners
+{
+	height: 525px;
+	background-color: #fff;
+	opacity: 80%;
+}
+.partners_text
+{
+	margin-top: 3%;
+	text-align: center;
+	margin-bottom: 2%;
+	color: #5182bd;
+	font-size: 45px;
+	font-family: 'Zilla Slab';
+}
+.partner_items
+{
+	display: flex;
+	flex-direction: row;
+}
+
+
+.partner_item img
+{
+	width: 270px;
+}
+
+.partner_item
+{
+	margin-top: 60px;
+	margin-left: 85px;
+}
+@media screen and (min-width: 375px) and (max-width: 419px)
+
+{
+	
+
+	/* features*/
+
+	.features_main_text
+	{
+		margin-top: 2%;
+		font-size: 25px;
+	}
+	.features_item
+	{
+		width: 33.333%;
+		text-align: center;
+		padding: 30px 15px;
+	}
+
+	.features_icon
+	{
+		width: 75px;
+		height: 75px;
+	}
+
+	.features_text
+	{	
+		font-size: 13px;
+		line-height: 1.0;
+	}
+
+	/* slider*/
+
+	.slider1
+	{
+		height: 350px;
+	}
+	.slider_text
+	{
+		padding-top: 13%;
+		font-size: 25px;
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
+	.slider_image
+	{
+		width: 250px;
+	}
+	.previous, .next
+	{
+	    font-size: 18px;
+	    margin-top: -140px;
+	    width: 20px;
+	}
+
+	.next
+	{
+		right: 70px;
+	}
+
+	.previous
+	{
+		left: 70px;
+	}
+
+	/* reviews */
+
+	.reviews_text
+	{
+		font-size: 25px;
+	}
+
+	.review_item
+	{
+	    font-size: 14px;
+	    line-height: 170%;
+	    word-spacing: 3px;
+	    width: 50%;
+	    margin-left: 25%;
+	    margin-bottom: 50px;
+	}
+
+	.review_author
+	{
+		font-size: 28px;
+		margin-bottom: 35px;
+	}
+	.previous_comm, .next_comm
+	{
+	    font-size: 24px;
+   		margin-top: -20px;
+    	width: 30px;
+	}
+
+.next_comm
+{
+	right: 25px;
+}
+
+.previous_comm
+{
+	left: 25px;
+}
+
+	.review_form label
+	{
+ 		width: 80px;
+ 		float: left;
+	}
+
+	.review_form input
+	{
+ 		width: 200px;
+	}
+ 
+	.review_form textarea
+	{
+ 		width: 200px;
+ 		max-width: 200px;
+ 		min-width: 200px;
+		line-height: 150%;
+	}
+
+
+	/* partners */
+	
+	.partners
+	{
+		height: 200px;
+	}
+	.partners_text
+	{
+		margin-bottom: 0;
+		font-size: 30px;
+	}
+	.partner_item img
+	{
+		width: 65px;
+	}
+
+	.partner_item
+	{
+		margin-top: 40px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+	
+	/* slider */
+	.slider1
+	{
+		height: 600px;
+	}
+	.previous, .next
+	{
+	    font-size: 28px;
+	    margin-top: -280px;
+	    width: 25px;
+	}
+
+	.next
+	{
+		right: 70px;
+	}
+
+	.previous
+	{
+		left: 70px;
+	}
+
+	/* features */
+	.features_main_text
+	{
+		font-size: 35px;
+	}
+	.features_item
+	{
+		padding: 50px 30px;
+	}
+	.features_icon
+	{
+		width: 76px;
+		height: 76px;
+		margin-bottom: 20px;
+	}
+
+	.features_text
+	{	
+		font-size: 20px;
+		line-height: 1.2;
+	}
+
+	/* reviews */
+	
+	.slider2
+	{
+		height: 600px;
+	}
+	.review_item
+	{
+	    font-size: 20px;
+	    line-height: 170%;
+	    word-spacing: 3px;
+	    width: 70%;
+	    margin-left: 15%;
+	    margin-bottom: 100px;
+	}
+	textarea
+	{
+		height: 80px;
+	}
+
+	.next_comm
+{
+	right: 90px;
+}
+
+.previous_comm
+{
+	left: 75px;
+}
+
+	/* partners */
+
+	.partners
+	{
+		height: 400px;
+	}
+	.partner_item img
+	{
+		width: 150px;
+	}
+
+	.partner_item
+	{
+		margin-top: 60px;
+		margin-left: 35px;
+	}
+
+	.review_form textarea
+	{
+		line-height: 100%;
+	}
+	
+}

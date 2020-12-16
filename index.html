@@ -4,13 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif&family=Oxygen&family=Zilla+Slab&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif&family=Oxygen&family=Zilla+Slab&display=swap" rel="stylesheet">		
+		<link rel="stylesheet" href="css/repeat.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="shortcut icon" type="image/png" href="images/icon.png">
 
 		<title>vortex.com</title>
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 
 	</head>
 
@@ -37,7 +39,7 @@
 
 				</g>
 			</svg>
-			<svg viewBox="0 0 1600 612" id="new">
+			<svg viewBox="0 0 1600 612">
   				<use href="#track" x="450">
     				<animate attributeName="x"
     						begin="0s"
@@ -58,14 +60,14 @@
 					</div>
 					<nav class="menu">
 						<div>
-							<a class = "nav_link" href="">Главная</a>					
-							<a class = "nav_link" href="About.html">О компании</a>					
-							<a class = "nav_link" href="delivery.html">Доставка</a>
+							<a title="main" class = "nav_link" href="">Главная</a>					
+							<a title="About" class = "nav_link" href="About.html">О компании</a>					
+							<a title="delivery" class = "nav_link" href="delivery.html">Доставка</a>
 						</div>
 					</nav>
 					<div class="call"> 
 						<div class="telephone">+375290000000</div>
-						<a class="call_text" href="tel:+3750000000">Заказать звонок</a>
+						<a title="call" class="call_text" href="tel:+3750000000">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -76,7 +78,7 @@
 				<div class="intro__inner">
 					<h1 class="main_text"> Доставим ваш груз в любую точку мира</h1>
 					<h3 class="sub_text"> Для этого нужно всего лишь оставить заявку</h3>
-					<a href="#request" class="intro_button intro_button--color"> Оставить заявку</a>
+					<a title="request" href="#request" class="intro_button intro_button--color"> Оставить заявку</a>
 				</div>
 			</div>
 			
@@ -87,7 +89,7 @@
 			<div class="container">
 				<h3 class="request_text">Оставьте заявку и мы свяжемся с вами </h3>
 				<div class="request__inner">
-					<form class="request_form" action="https://formspree.io/f/xvovbayn" method="POST">
+					<form class="request_form" action="https://formspree.io/f/xvovbayn" method="POST" id="my-form">
 						<div class="request_inputs">
 							<p class="text_form">Ваш e-mail</p>
 							<input type="e-mail" class="e-mail" name="e-mail">
@@ -99,10 +101,10 @@
 							<textarea class="message" name="message"></textarea>
 						</div>
 						<div class="submit_button">
-							<input type="submit" class="button" value="Отправить">
+							<input type="submit" class="button" id="my-form-button" value="Отправить">
 						</div>
 					</form>
-					<img class="request_image" src="images/request.jpg">
+					<img title="request_image" alt="Фоновое изображения" class="request_image" src="images/request.jpg">
 				</div>
 				
 			</div>
@@ -123,18 +125,22 @@
 						<div class="footer_email">vortex@gmail.com</div>
 					</div>
 
+					<div id="back-top">
+						<a title="up" href="#" onclick="return up()">⬆</a>  
+					</div> 
+
 					<div class="footer_block">
 						<h4 class="footer_title">Часы работы</h4>
 						<div class="footer_time">ПН-ВС: 8:00 - 20:00</div>
 						<div class="social">
-							<a class="social_item" href="https://www.facebook.com/" target="_blank">
-								<img src="images/facebook.svg" width="30px" height="30px">
+							<a title="fb" class="social_item" href="https://www.facebook.com/" target="_blank">
+								<img title="fb_image" alt="Иконка facebook" src="images/facebook.svg" width="30px" height="30px">
 							</a>
-							<a class="social_item" href="https://vk.com" target="_blank">
-								<img src="images/vk.svg" width="30px" height="30px">
+							<a title="vk" class="social_item" href="https://vk.com" target="_blank">
+								<img title="vk_image" alt="Иконка vk" src="images/vk.svg" width="30px" height="30px">
 							</a>
-							<a class="social_item" href="https://instagram.com" target="_blank">
-								<img src="images/instagram.svg" width="30px" height="30px">
+							<a title="ig" class="social_item" href="https://instagram.com" target="_blank">
+								<img title="instagram_image" alt="Иконка instagram" src="images/instagram.svg" width="30px" height="30px">
 							</a>
 						</div>
 					</div>

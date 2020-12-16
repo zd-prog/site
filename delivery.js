@@ -1,6 +1,11 @@
 window.onload = function () 
 {
-    document.body.classList.add('loaded_hiding');
+    Preloader();
+    Load();
+}
+function Preloader()
+{
+	document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
       document.body.classList.add('loaded');
       document.body.classList.remove('loaded_hiding');
@@ -38,6 +43,7 @@ function AddBlock()
 	str5.className='request_form';
 	str5.action="https://formspree.io/f/xvovbayn";
 	str5.method='post';
+	str5.id = "my-form"
 	str4.appendChild(str5);
 
 	var str6 = document.createElement('div');
@@ -89,6 +95,7 @@ function AddBlock()
 
 	var str15 = document.createElement('div');
 	str15.className="submit_button";
+	str15.id = "my-form-button"
 	str5.appendChild(str15);
 
 	var str16 = document.createElement('input');
@@ -103,5 +110,50 @@ function AddBlock()
 	str4.appendChild(str17);
 	}
 	flag = true;
+}
+
+function Prompt()
+{
+	this.prompt = document.createElement('div');
+	this.prompt.style.position = "absolute";
+	this.prompt.style.visibility = "hidden";
+	this.prompt.className = 'prompt'; 
+}
+
+Prompt.prototype.show = function(txt,x,y)
+{
+	this.prompt.innerText = txt;
+	this.prompt.style.left = x + 'px';
+	this.prompt.style.top = y + 'px';
+	this.prompt.style.visibility = 'visible';
+
+	if (this.prompt.parentNode != document.body)
+		document.body.appendChild(this.prompt);
+};
+
+Prompt.prototype.hide = function()
+{
+	this.prompt.style.visibility = "hidden";
+};
+
+function Load()
+{
+	var d = document.getElementById("prompt")
+	d.onmousemove = Move;
+    d.onmouseout = Out;
+}
+
+var p = new Prompt();
+
+function Move(e)
+{
+	if (!e) 
+		e = window.event;
+    p.show("Чтобы оставить заявку, кликните на этот пункт и опусти-тесь ниже по страничке", e.clientX + 10, e.clientY + 20);
+}
+
+function Out()
+{
+	p.hide();
 }
 
